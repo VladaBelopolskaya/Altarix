@@ -2,9 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
-  background-color: #c7b299;
+  background-color: #2b3762;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .visually-hidden {

@@ -1,0 +1,54 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+
+  margin-top: 45px;
+}
+
+.page-footer__description {
+  margin: 0;
+  padding: 0;
+
+  margin-right: 38px;
+}
+
+.page-footer__link {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3a436d;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-right: 9px;
+
+  &--vk {
+    background-image: url("../img/vk.png");
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook.png");
+  }
+
+  &--twitter {
+    background-image: url("../img/twitter.png");
+  }
+
+  &--ok {
+    background-image: url("../img/ok.png");
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #198ac5;
+  }
+}
+
