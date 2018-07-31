@@ -1,28 +1,25 @@
 .page-header {
   display: flex;
   align-items: center;
-
   margin-top: 35px;
 }
 
 .page-header__logo {
-  width: 72px;
-  height: 90px;
-
   margin-right: 35px;
+
+  width: 70px;
+  height: 90px;
 }
 
 .page-header__text {
   margin: 0;
   padding: 0;
-  margin-right: 378px;
+  margin-right: 380px;
+  margin-top: -10px;
 
-  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 38px;
   line-height: 38px;
-  font-weight: 400;
-  letter-spacing: 6px;
-  color: #ffffff;
+  letter-spacing: 8px;
   opacity: 0.70;
 }
 

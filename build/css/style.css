@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  font-family: "SourceSansPro", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #2b3762;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
@@ -326,24 +328,24 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "SourceSansPro";
   font-display: swap;
-  src: url("../fonts/Lato-Regular.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: "Lato";
+  font-family: "SourceSansPro";
   font-display: swap;
-  src: url("../fonts/Lato-Bold.woff") format("woff");
+  src: url("../fonts/SourceSansPro-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-display: swap;
+  src: url("../fonts/SourceSansPro-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Helvetica";
-  font-display: swap;
-  src: url("../fonts/Helvetica-Neue.woff") format("woff");
-  font-weight: 400;
   font-style: normal; }
 
 .page-wrapper {
@@ -361,20 +363,18 @@ template {
   margin-top: 35px; }
 
 .page-header__logo {
-  width: 72px;
-  height: 90px;
-  margin-right: 35px; }
+  margin-right: 35px;
+  width: 70px;
+  height: 90px; }
 
 .page-header__text {
   margin: 0;
   padding: 0;
-  margin-right: 378px;
-  font-family: "Helvetica", "Arial", sans-serif;
+  margin-right: 380px;
+  margin-top: -10px;
   font-size: 38px;
   line-height: 38px;
-  font-weight: 400;
-  letter-spacing: 6px;
-  color: #ffffff;
+  letter-spacing: 8px;
   opacity: 0.70; }
 
 .page-header__link {
@@ -392,37 +392,36 @@ template {
 
 .page-main {
   width: 630px;
-  margin-top: 80px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
-  color: #ffffff; }
+  margin-top: 75px; }
 
 .page-main__title {
-  font-size: 40px;
-  line-height: 55px;
-  margin: 0;
-  padding: 0; }
-
-.page-main__description {
-  font-size: 20px;
-  line-height: 24px;
-  opacity: 0.8;
   margin: 0;
   padding: 0;
-  margin-top: 12px; }
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 400;
+  letter-spacing: 3px; }
+
+.page-main__description {
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  width: 580px;
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: 300; }
 
 .page-main__form {
   position: relative;
-  margin-top: 145px;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  color: #ffffff; }
+  margin-top: 142px; }
   .page-main__form::before {
     position: absolute;
     content: "+7";
     color: #000000;
-    font-size: 17px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
     left: 16px;
     top: 78px; }
   .page-main__form::after {
@@ -437,30 +436,34 @@ template {
     top: 48px; }
 
 .page-main__title-form {
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0; }
-
-.page-main__description-form {
-  font-size: 17px;
-  line-height: 17px;
   margin: 0;
   padding: 0;
-  margin-top: 5px; }
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.page-main__description-form {
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 1px; }
 
 .page-main__input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 328px;
-  font-size: 17px;
-  line-height: 17px;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-right: 20px;
   padding-left: 46px;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-bottom: 14px;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 1px;
   border: none;
   border-radius: 5px; }
 
@@ -472,52 +475,56 @@ template {
   color: #ffffff;
   font-size: 18px;
   line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
   background-color: #1ba0e5;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   border: none;
   border-radius: 5px; }
   .page-main__button:hover, .page-main__button:focus, .page-main__button:active {
     background-color: #198ac5; }
 
-.page-main__telephone {
+.telephone {
   position: fixed;
   bottom: 0;
   left: 50%;
   margin-left: 200px;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
   width: 296px;
   height: 534px; }
 
-.page-main__telephone-img {
+.telephone__img {
   position: relative;
   width: 296px;
-  height: 534px; }
+  height: 542px;
+  top: -8px; }
 
-.page-main__telephone-title {
+.telephone__title {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 210px;
   position: relative;
-  top: -190px;
-  left: 50px;
+  top: -202px;
+  left: 48px;
   font-size: 18px;
-  color: #5971ce; }
+  color: #5971ce;
+  font-weight: 300;
+  letter-spacing: 1px; }
 
-.page-main__telephone-description {
+.telephone__description {
   margin: 0;
   padding: 0;
   width: 180px;
   text-align: center;
   position: relative;
-  top: -178px;
+  top: -192px;
   left: 58px;
   font-size: 14px;
   line-height: 17px;
+  letter-spacing: 1px;
   color: #626262; }
 
-.page-main__telephone-button {
+.telephone__button {
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -529,13 +536,14 @@ template {
   background-color: #5971ce;
   text-align: center;
   position: relative;
-  top: -158px;
+  top: -170px;
   left: 80px;
   font-size: 15px;
   line-height: 15px;
+  letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase; }
-  .page-main__telephone-button:hover, .page-main__telephone-button:focus, .page-main__telephone-button:active {
+  .telephone__button:hover, .telephone__button:focus, .telephone__button:active {
     background-color: #198ac5; }
 
 .page-footer {
@@ -545,18 +553,16 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
   font-size: 16px;
   line-height: 16px;
-  margin-top: 45px;
+  letter-spacing: 2px;
+  margin-top: 42px;
   margin-bottom: 45px; }
 
 .page-footer__description {
   margin: 0;
   padding: 0;
-  margin-right: 38px; }
+  margin-right: 10px; }
 
 .page-footer__link {
   cursor: pointer;
@@ -566,7 +572,8 @@ template {
   border-radius: 3px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 9px; }
+  margin-right: 9px;
+  margin-top: 3px; }
   .page-footer__link--vk {
     background-image: url("../img/vk.png"); }
   .page-footer__link--facebook {

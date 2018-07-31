@@ -1,0 +1,77 @@
+.telephone {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: 200px;
+
+  width: 296px;
+  height: 534px;
+}
+
+.telephone__img {
+  position: relative;
+  width: 296px;
+  height: 542px;
+
+  top: -8px;
+}
+
+.telephone__title {
+  margin: 0;
+  padding: 0;
+  width: 210px;
+
+  position: relative;
+  top: -202px;
+  left: 48px;
+
+  font-size: 18px;
+  color: #5971ce;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.telephone__description {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+
+  text-align: center;
+  position: relative;
+  top: -192px;
+  left: 58px;
+
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #626262;
+}
+
+.telephone__button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 138px;
+  background-color: #5971ce;
+
+  text-align: center;
+  position: relative;
+  top: -170px;
+  left: 80px;
+
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #198ac5;
+  }
+}
